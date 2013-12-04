@@ -1,0 +1,144 @@
+ /* ----- Background ----- */
+#body {
+	max-width: 960px;
+	background: gray;
+	Font: 100%/1.5 "Trebuchet MS", Arial, Helvetica;
+	color: gray;
+	margin: 0 auto;
+}
+
+/* -------- Wrapper --------- */
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fff;
+	padding: 25px;
+}
+
+/* -------- Headings -------- */
+h1, h2 {
+	text-align: center;
+	color: gray;
+	text-shadow: 0.3125em 0.3125em 0.3125em gray;
+	font-weight: normal;
+	font: 2em/1 'Electrolize';
+}
+
+/* ------- Navigation ------- */
+#nav {
+	margin: 50px auto;
+}
+
+#nav  ul{
+	width: 50%;
+	margin: 0 auto;
+	background: #fff;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+#nav  li {
+	width: 50%;
+	background: silver;
+	float: left;
+}
+#nav a {
+	color: #fff;
+	text-decoration: none;
+	background: gray;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;	
+}
+#nav a:hover {
+	color: gray;
+	background: #fff;
+}
+
+/* ------- Intro ------ */
+#intro ul {
+	list-style-type: none;
+	padding: 25px;
+}
+
+/* ------ Links ----- */
+a {
+	font: 1.5em/1 'Iceland';
+	text-decoration: underline;
+	color: #000;
+	font-weight: normal;
+}
+
+/* ------ Content ----- */
+#scs ul, #sbt ul, #fs ul, #ta ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* ----- Footer ----- */
+#footer, #footer a {
+	text-align: center;
+	margin: 0 auto;
+	color: gray;
+	font-weight: normal;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+/* ----- Media Queries ----- */
+
+	/* Tablet Portrait to Standard 960px (devices and browsers) */
+	@media screen and (min-width: 768px) and (max-width:959px) {
+		#wrapper {background-color: #fff;}
+		#nav ul {background: #fff;}
+		h1 {color: gray;
+		text-shadow: 0.3125em 0.3125em 0.3125em gray;}
+		#gallery-pix ul {
+			margin: 0 auto;
+		}
+		#gallery-pix img {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+		}
+	}
+	/* Mobile Landscape to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#wrapper {background-color: #fff;}
+		#nav ul {
+			margin: 0 auto;
+			background: #fff;
+			}
+		#nav li {
+			float: none;
+			width: 100%;
+			margin: 0 auto;
+			}
+		#gallery-pix img {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+		}
+		h2 {color: gray;
+		text-shadow: 0.3125em 0.3125em 0.3125em gray;}
+	}
+	
+	/* Mobile Portrait to Mobile Landscape (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#wrapper {background-color: #fff;}
+		#nav li {
+			float: none;
+			width: 100%;
+			}
+		#main-image {display: none;}
+		#gallery-pix img {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+		}
+		h2 {color: gray;
+		text-shadow: 0.3125em 0.3125em 0.3125em gray;}
+		
+	}
