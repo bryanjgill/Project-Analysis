@@ -60,7 +60,7 @@ h1, h2 {
 /* ------- Intro ------ */
 #intro ul {
 	list-style-type: none;
-	padding: 25px;
+	padding: 0;
 }
 
 /* ------ Links ----- */
